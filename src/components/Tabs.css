@@ -1,0 +1,89 @@
+.tabs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
+  
+  .tabs-right {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  .logo img {
+    max-width: 230px;
+    height: auto;
+  }
+  
+  .tab {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 5px 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .tabn {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 5px 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .tab:hover {
+    background-color: blue;
+    color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .tabs-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tabs-right {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .tab {
+      margin: 5px;
+    }
+  
+    .logo img {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tabs-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tabs-right {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .tab {
+      margin: 5px;
+    }
+  
+    .logo img {
+      max-width: 80px;
+    }
+  }

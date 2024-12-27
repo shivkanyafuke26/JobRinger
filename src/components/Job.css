@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 550px;
+}
+
+.job-profiles {
+  flex: 0 0 50%;
+  padding: 20px;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.job-description {
+  flex: 0 0 45%;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-card {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.job-card:hover {
+  background-color: #0056b3;
+}
+
+
+.job-card a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .job-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .job-profiles {
+    width: 100%;
+    height: auto;
+  }
+
+  .job-description {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .job-card {
+    font-size: 14px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+  }
+}
